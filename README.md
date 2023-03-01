@@ -17,6 +17,14 @@ The Kaggle dataset contains statistics (CSV files) on daily popular YouTube vide
           
 - **Analysis :** Creating AWS Data Catalog using Crawler and Analysing in AWS Athena.
 - **Reporting :** Power BI dashboard for understanding data graphically.
+![utubePowerBI](https://drive.google.com/uc?export=view&id=1kTjhxNxHZ5R1-Xa93uemerj56yzfx0Uf)
+
+# AWS Services used
+- **Amazon S3:** Amazon S3 is an object storage service that provides manufacturing scalability, data availability, security, and performance.
+- **AWS IAM:** Identity and access management which enables us to manage access to AWS services and resources securely.
+- **AWS Glue:** A serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.
+- **AWS Lambda:** Lambda is a computing service that allows programmers to run code without creating or managing servers.
+- **AWS Athena:** Athena is an interactive query service for S3 in which there is no need to load data it stays in S3.
 
 ## **Technologies used**
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)

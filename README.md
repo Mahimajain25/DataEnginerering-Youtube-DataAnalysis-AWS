@@ -10,11 +10,10 @@ The Kaggle dataset contains statistics (CSV files) on daily popular YouTube vide
 [Dataset-Link](https://www.kaggle.com/datasets/datasnaek/youtube-new)
 
 # Approach
-- **Data Ingestion :**  Ingest data using AWS CLI ([CLI Commands]()) in AWS S3 bucket.
-- **ETL : i)** Extracting the data from S3 bucket and transforming it from json to parquet format using AWS Lamda (auto triggered when file added in S3 bucket) and load the clean data into new s3 bucket. <br>
-          **ii)** Glue ETL job (PySpark) to get data from s3 bucket and transform from csv to parquet format and loading back to new s3 bucket. 
-          **iii)** Glue ETL job (PySpark) for joining the two files for final analysis.
-          
+- **Data Ingestion :**  Ingest data using AWS CLI ([CLI Commands](https://github.com/Mahimajain25/DataEnginerering-Youtube-DataAnalysis-AWS/blob/main/CLI%20Command.txt)) in AWS S3 bucket.
+- **ETL : i)** Extracting the data from S3 bucket and transforming it from json to parquet format using AWS Lamda (auto triggered when file added in S3 bucket) and load the clean data into new s3 bucket. ([Lamda Code](https://github.com/Mahimajain25/DataEnginerering-Youtube-DataAnalysis-AWS/blob/main/Lamda%20Code%20JSONtoParquet.txt))  <br>
+          **ii)** Glue ETL job (PySpark) to get data from s3 bucket and transform from csv to parquet format and loading back to new s3 bucket. ([PySpark Code](https://github.com/Mahimajain25/DataEnginerering-Youtube-DataAnalysis-AWS/blob/main/Pyspark%20Code%20CSVtoParquet.txt)) <br>
+          **iii)** Glue ETL job for joining the two files for final analysis.
 - **Analysis :** Creating AWS Data Catalog using Crawler and Analysing in AWS Athena.
 - **Reporting :** Power BI dashboard for understanding data graphically.
 ![utubePowerBI](https://drive.google.com/uc?export=view&id=1kTjhxNxHZ5R1-Xa93uemerj56yzfx0Uf)
